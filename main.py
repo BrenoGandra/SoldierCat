@@ -1,11 +1,4 @@
-import pygame as pg
+from code.Game import Game
 
-print('setup start')
-pg.init()
-window = pg.display.set_mode(size=(600, 480))
-
-while True:
-    for event in pg.event.get():
-        if event.type == pg.QUIT:
-            pg.quit()
-            quit()
+game = Game()
+game.run()
