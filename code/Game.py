@@ -1,3 +1,5 @@
+import sys
+
 import pygame
 
 from code.Level import Level
@@ -11,34 +13,30 @@ class Game:
         pygame.init()
         self.window = pygame.display.set_mode(size=(WIN_WIDTH, WIN_HEIGHT))
 
-    def run(self, ):
+    def run(self):
 
         while True:
             score = Score(self.window)
             menu = Menu(self.window)
             menu_return = menu.run()
-            if menu_return in [MENU_OPTION[0]]:
-                player_score = [0]
+            if menu_return in [MENU_OPTION[0], MENU_OPTION[1]]:
+                player_score = [0, 0]  # Player1, Player2
                 level = Level(self.window, 'Level1', menu_return, player_score)
                 level_return = level.run(player_score)
                 if level_return:
                     level = Level(self.window, 'Level2', menu_return, player_score)
                     level_return = level.run(player_score)
                     if level_return:
-                        score.save_score(game_mode=0, player_score= player_score)
-
-            elif menu_return == MENU_OPTION[1]:
-                score.show_score()
+                        score.save_score(menu_return, player_score)
 
             elif menu_return == MENU_OPTION[2]:
+                score.show_score()
+
+            elif menu_return == MENU_OPTION[3]:
                 pygame.quit()
                 quit()
 
             else:
-                pass
+                pygame.quit()
+                sys.exit()
 
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    print('Quitting...')
-                    pygame.quit()
-                    quit()
