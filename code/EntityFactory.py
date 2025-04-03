@@ -24,6 +24,34 @@ class EntityFactory:
                     list_bg.append(Background(f'Level2Bg{i}', (WIN_WIDTH, 0)))
                 return list_bg
 
+            case 'Level3Bg':
+                list_bg = []
+                for i in range(4):
+                    list_bg.append(Background(f'Level3Bg{i}', position))
+                    list_bg.append(Background(f'Level3Bg{i}', (WIN_WIDTH, 0)))
+                return list_bg
+
+            case 'Level4Bg':
+                list_bg = []
+                for i in range(5):
+                    list_bg.append(Background(f'Level4Bg{i}', position))
+                    list_bg.append(Background(f'Level4Bg{i}', (WIN_WIDTH, 0)))
+                return list_bg
+
+            case 'Level5Bg':
+                list_bg = []
+                for i in range(7):
+                    list_bg.append(Background(f'Level5Bg{i}', position))
+                    list_bg.append(Background(f'Level5Bg{i}', (WIN_WIDTH, 0)))
+                return list_bg
+
+            case 'Level6Bg':
+                list_bg = []
+                for i in range(4):
+                    list_bg.append(Background(f'Level6Bg{i}', position))
+                    list_bg.append(Background(f'Level6Bg{i}', (WIN_WIDTH, 0)))
+                return list_bg
+
             case 'Player1':
                 return Player('Player1', (20, WIN_HEIGHT / 2 - 30))
 

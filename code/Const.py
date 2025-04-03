@@ -35,6 +35,27 @@ ENTITY_SPEED = {
     'Level2Bg2': 2,
     'Level2Bg3': 3,
     'Level2Bg4': 4,
+    'Level3Bg0': 0,
+    'Level3Bg1': 1,
+    'Level3Bg2': 2,
+    'Level3Bg3': 3,
+    'Level4Bg0': 0,
+    'Level4Bg1': 1,
+    'Level4Bg2': 2,
+    'Level4Bg3': 3,
+    'Level4Bg4': 4,
+    'Level5Bg0': 0,
+    'Level5Bg1': 1,
+    'Level5Bg2': 2,
+    'Level5Bg3': 3,
+    'Level5Bg4': 4,
+    'Level5Bg5': 5,
+    'Level5Bg6': 6,
+    'Level6Bg0': 0,
+    'Level6Bg1': 1,
+    'Level6Bg2': 2,
+    'Level6Bg3': 3,
+
 
 }
 ENTITY_SHOT_DELAY = {
@@ -71,6 +92,28 @@ ENTITY_HEALTH = {
     'Level2Bg2': 9999,
     'Level2Bg3': 9999,
     'Level2Bg4': 9999,
+    'Level3Bg0': 9999,
+    'Level3Bg1': 9999,
+    'Level3Bg2': 9999,
+    'Level3Bg3': 9999,
+    'Level4Bg0': 9999,
+    'Level4Bg1': 9999,
+    'Level4Bg2': 9999,
+    'Level4Bg3': 9999,
+    'Level4Bg4': 9999,
+    'Level5Bg0': 9999,
+    'Level5Bg1': 9999,
+    'Level5Bg2': 9999,
+    'Level5Bg3': 9999,
+    'Level5Bg4': 9999,
+    'Level5Bg5': 9999,
+    'Level5Bg6': 9999,
+    'Level6Bg0': 9999,
+    'Level6Bg1': 9999,
+    'Level6Bg2': 9999,
+    'Level6Bg3': 9999,
+
+
 }
 
 ENTITY_DAMAGE = {
@@ -97,6 +140,28 @@ ENTITY_DAMAGE = {
     'Level2Bg2': 0,
     'Level2Bg3': 0,
     'Level2Bg4': 0,
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level4Bg0': 0,
+    'Level4Bg1': 0,
+    'Level4Bg2': 0,
+    'Level4Bg3': 0,
+    'Level4Bg4': 0,
+    'Level5Bg0': 0,
+    'Level5Bg1': 0,
+    'Level5Bg2': 0,
+    'Level5Bg3': 0,
+    'Level5Bg4': 0,
+    'Level5Bg5': 0,
+    'Level5Bg6': 0,
+    'Level6Bg0': 0,
+    'Level6Bg1': 0,
+    'Level6Bg2': 0,
+    'Level6Bg3': 0,
+
+
 }
 
 ENTITY_SCORE = {
@@ -123,6 +188,27 @@ ENTITY_SCORE = {
     'Level2Bg2': 0,
     'Level2Bg3': 0,
     'Level2Bg4': 0,
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level4Bg0': 0,
+    'Level4Bg1': 0,
+    'Level4Bg2': 0,
+    'Level4Bg3': 0,
+    'Level4Bg4': 0,
+    'Level5Bg0': 0,
+    'Level5Bg1': 0,
+    'Level5Bg2': 0,
+    'Level5Bg3': 0,
+    'Level5Bg4': 0,
+    'Level5Bg5': 0,
+    'Level5Bg6': 0,
+    'Level6Bg0': 0,
+    'Level6Bg1': 0,
+    'Level6Bg2': 0,
+    'Level6Bg3': 0,
+
 }
 
 EVENT_ENEMY = pygame.USEREVENT + 1
@@ -154,7 +240,7 @@ SPAWN_TIME = 5000
 
 # T
 TIMEOUT_STEP = 100
-TIMEOUT_LEVEL = 40000
+TIMEOUT_LEVEL = 15000
 
 # W
 WIN_WIDTH = 573

@@ -27,7 +27,19 @@ class Game:
                     level = Level(self.window, 'Level2', menu_return, player_score)
                     level_return = level.run(player_score)
                     if level_return:
-                        score.save_score(menu_return, player_score)
+                        level = Level(self.window, 'Level3', menu_return, player_score)
+                        level_return = level.run(player_score)
+                        if level_return:
+                            level = Level(self.window, 'Level4', menu_return, player_score)
+                            level_return = level.run(player_score)
+                            if level_return:
+                                level = Level(self.window, 'Level5', menu_return, player_score)
+                                level_return = level.run(player_score)
+                                if level_return:
+                                    level = Level(self.window, 'Level6', menu_return, player_score)
+                                    level_return = level.run(player_score)
+                                    if level_return:
+                                        score.save_score(menu_return, player_score)
 
             elif menu_return == MENU_OPTION[2]:
                 score.show_score()
@@ -39,4 +51,3 @@ class Game:
             else:
                 pygame.quit()
                 sys.exit()
-
