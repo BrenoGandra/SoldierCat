@@ -56,7 +56,7 @@ class Level:
                     sys.exit()
 
                 if event.type == EVENT_ENEMY:
-                    choice = random.choice(('Enemy0', 'Enemy1', 'Enemy2', 'Enemy3'))
+                    choice = random.choice(('Enemy0', 'Enemy1', 'Enemy2', 'Enemy3', 'Enemy4', 'Enemy5', 'Enemy6', 'Enemy7', 'Enemy8', 'Enemy9' ))
                     self.entity_List.append(EntityFactory.get_entity(choice))
 
                 if event.type == EVENT_TIMEOUT:

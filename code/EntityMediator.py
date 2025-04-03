@@ -63,8 +63,17 @@ class EntityMediator:
 
     @staticmethod
     def verify_health(entity_list: list[Entity]):
+        new_list = []
+
         for ent in entity_list:
-            if ent.health <= 0:
+            if ent is None:
+                continue
+
+            if ent.health > 0:
+                new_list.append(ent)
+            else:
                 if isinstance(ent, Enemy):
                     EntityMediator.__give_score(ent, entity_list)
-                entity_list.remove(ent)
+
+        entity_list.clear()
+        entity_list.extend(new_list)
