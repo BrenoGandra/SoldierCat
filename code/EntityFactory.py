@@ -58,5 +58,5 @@ class EntityFactory:
             case 'Player2':
                 return Player('Player2', (20, WIN_HEIGHT / 2 + 30))
 
-            case 'Enemy0' | 'Enemy1' | 'Enemy2' | 'Enemy3' 'Enemy4' | 'Enemy5' | 'Enemy6' | 'Enemy7' | 'Enemy8' | 'Enemy9' :
+            case 'Enemy0' | 'Enemy1' | 'Enemy2' | 'Enemy3' | 'Enemy4' | 'Enemy5' | 'Enemy6' | 'Enemy7' | 'Enemy8' | 'Enemy9' :
                 return Enemy(entity_name, (WIN_WIDTH + 20, random.randint(30, WIN_HEIGHT - 30)))

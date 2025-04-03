@@ -31,7 +31,7 @@ class Score:
             if game_mode == MENU_OPTION[1]:
                 score = (player_score[0] + player_score[1]) / 2
                 text = 'Enter team name(MAX: 8 characters): '
-            self.score_text(text_size=22, text=text, text_color=C_GRAY, text_center_pos=SCORE_POS['EnterName'])
+            self.score_text(text_size=24, text=text, text_color=C_WHITE, text_center_pos=SCORE_POS['EnterName'])
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -46,7 +46,7 @@ class Score:
                     else:
                         if len(name) < 8:
                             name += event.unicode
-            self.score_text(text_size=30, text=name, text_color=C_WHITE, text_center_pos=SCORE_POS['Name'])
+            self.score_text(text_size=30, text=name, text_color=C_YELLOW, text_center_pos=SCORE_POS['Name'])
             pygame.display.flip()
             pass
 
